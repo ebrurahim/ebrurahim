@@ -1,0 +1,81 @@
+<nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+        <h1 style="color: aliceblue;">EMployee deatails</h1>
+        <div class="d-flux">
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"> Add employee</button>
+        </div>
+    </div>
+</nav>
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th scope="col"> EmployeeID</th>
+            <th scope="col"> Firstname</th>
+            <th scope="col"> Lastname</th>
+            <th scope="col"> EmailID</th>
+            <th scope="col"> MobileNo</th>
+            <th scope="col"> Salary</th>
+            <th scope="col" >Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>Jhone12</td>
+        <td>Jhone</td>
+        <td>James</td>
+        <td>Jhon.bri.in</td>
+        <td>9909052566</td>
+        <td>500000</td>
+        <td><button class="btn btn-info"> Edit</button>   <button type="button" class="btn btn-outline-danger mx-3">Delete</button></td>
+    </tr>
+    </tbody>
+</table>
+
+
+ 
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Employee Detail</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [ formGr oup] ="formvalue">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Firstname</label>
+                  <input type="text" formControName="firstname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+             
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Lastname</label>
+                    <input type="text" formControName="lastname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+               
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">email ID</label>
+                    <input type="text" formControName="emai" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+               
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Mobile no</label>
+                    <input type="text"formControName="mobile"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+               
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Salary</label>
+                    <input type="text" formControName="salary" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+               
+                  </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" `class="btn btn-primary">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
